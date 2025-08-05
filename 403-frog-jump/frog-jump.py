@@ -7,4 +7,5 @@ class Solution:
                 for k in [x- 1 , x , x+1]:
                     if k > 0 and stone + k in dp:
                         dp[stone+k].add(k)
+        print(dp)
         return len(dp[stones[-1]])>0
